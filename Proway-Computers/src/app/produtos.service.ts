@@ -5,13 +5,13 @@ import { IProduto, produtos } from './produtos';
   providedIn: 'root'
 })
 export class ProdutosService {
-  produtos: IProduto[] =  produtos;
+  produtos: IProduto[] = produtos;
   constructor() { }
 
   getAll(){
     return this.produtos;
   }
   getOne(produtoId: number){
-    return this.produtos.find(produto => produto.id = produtoId);
+    return this.produtos.find(produto => produto.id == produtoId);
   }
 }
