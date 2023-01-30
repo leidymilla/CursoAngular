@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CarrinhoService } from '../carrinho.service';
 
 @Component({
   selector: 'app-reader',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ReaderComponent implements OnInit {
 
   constructor() { }
-
+    public carrinhoService!: CarrinhoService;
   ngOnInit(): void {
   }
 
