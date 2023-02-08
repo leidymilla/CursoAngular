@@ -7,7 +7,7 @@ import { ReaderComponent } from './reader/reader.component';
 import { FooterComponent } from './footer/footer.component';
 import { NaoEncontradaComponent } from './nao-encontrada/nao-encontrada.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSnackBarModule} from "@angular/material/snack-bar";
+
 
 
 @NgModule({
@@ -21,8 +21,8 @@ import { MatSnackBarModule} from "@angular/material/snack-bar";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MatSnackBarModule
+    BrowserAnimationsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

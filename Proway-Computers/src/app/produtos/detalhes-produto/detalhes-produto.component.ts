@@ -40,7 +40,7 @@ throw new Error('Method not implemented.');
         ... this.produto!,
       quantidade: this.quantidade
       };
-      this.carrinhoService.AdicionarAoCarrinho(produto)
+      this.carrinhoService.adicionarAoCarrinho(produto)
     }
      
 } 
