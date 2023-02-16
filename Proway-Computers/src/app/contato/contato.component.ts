@@ -16,7 +16,7 @@ export class ContatoComponent implements OnInit {
       Validators.minLength(10),
       Validators.required
     ]],
-    tel: ["",[
+    telefone: ["",[
       Validators.minLength(11),
       Validators.required
     ]],
@@ -36,6 +36,11 @@ export class ContatoComponent implements OnInit {
   
 
   ngOnInit(): void {
+  }
+  
+  enviarFormulario(){
+    alert("A mensagem foi enviada!");
+    this.formContato.reset();
   }
 
 }
